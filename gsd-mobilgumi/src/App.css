@@ -24,3 +24,9 @@
 .active {
   font-weight: "bolder";
 }
+
+.services-box:hover{
+  transform: scale(1.1);
+
+
+}

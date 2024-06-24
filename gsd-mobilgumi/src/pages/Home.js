@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography, Button } from "@mui/material";
+import { Grid, Typography, Button, Box } from "@mui/material";
 import { Link } from "react-scroll";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
@@ -18,21 +18,34 @@ export default function Home() {
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
         width: '100%',
-        height: "100vh",
+        height: "104vh",
       }}
       id="back-to-top-anchor">
-      <Grid item xs={12} sx={{
+      <Grid item xs={12} 
+      sx={{
+        display: "flex",
+        alignItems: "flex-end",
+        justifyContent: "flex-end",
+        flexDirection: "row"
+      }}
+      data-aos="fade-up"
 
-        mt: 25
-      }}>
+      >
+        <Box sx={{width: "1400px"}}></Box>
         <Button
           sx={{
-            my: 2,
+            my: 8,
             mx: "auto",
-            display: "block",
+            borderRadius: '30px',
+            px: 7,
+            py: 2,
+            fontWeight: 'bolder'
           }}
-          variant= "contained"
-          endIcon={<ArrowForwardIcon/>}
+          variant="contained"
+          endIcon={<ArrowForwardIcon sx={{
+            strokeWidth: 4
+          }} />}
+
         >
           <Link
             // onClick={handleDrawerToggle}
@@ -42,6 +55,7 @@ export default function Home() {
             smooth={true}
             offset={-70}
             duration={500}
+
           >
             Ajánlat kérése
           </Link>

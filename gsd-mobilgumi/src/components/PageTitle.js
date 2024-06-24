@@ -1,7 +1,7 @@
 import { Typography, Box } from "@mui/material";
 import { Divider } from "@mui/material";
 
-export default function PageTitle({ title, id }) {
+export default function PageTitle({ title, id, color="text.primary" }) {
   return (
     <Box
       sx={{
@@ -12,24 +12,19 @@ export default function PageTitle({ title, id }) {
       }}
     >
       <Typography
-        variant="h1"
+        variant="h4"
         sx={{
-          fontFamily: "Italianno, cursive",
+          // fontFamily: "Italianno, cursive",
+          textTransform: "uppercase",
+          fontWeight: "bolder",
+          color: color
         }}
         className="title"
         data-aos="fade-up"
       >
         {title}
       </Typography>
-      <Divider
-        data-aos="fade-down"
-        data-aos-duration="400"
-        sx={{
-          width: { xs: "8%", sm: "7%", md: "4%" },
-          border: "2px solid #1e8449 ",
-          marginTop: { xs: -2.3, md: -3, lg: -4 },
-        }}
-      />
+
     </Box>
   );
 }

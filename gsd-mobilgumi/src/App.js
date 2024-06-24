@@ -23,13 +23,15 @@ theme = createTheme(theme, {
   palette: {
     text: {
       // primary: "#a97142",
-      // secondary: "#ff4c4c"
+      // secondary: "#ff4c4c",
+      secondary: '#ff4c4c',
+      contrastText: '#fff',
     },
     // action: {
     //   active: "#a97142", 
     // },
     primary: {
-      main: '#ff4c4c', 
+      main: '#ff3131',
       light: '#ff4c42',
       dark: '#ff4c62',
       contrastText: '#fff',
@@ -56,21 +58,21 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-          <CssBaseline />
-          {/* <Toolbar id="back-to-top-anchor"/> */}
+        <CssBaseline />
+        {/* <Toolbar id="back-to-top-anchor"/> */}
 
 
-          <ResponsiveAppBar pages={pages} />
-          <Suspense fallback={<Loading />}>
-            <Box>
-              {pages.map((item) => (
-                <Box key={item.name}>{item.component} </Box>
-              ))}
-            </Box>
+        <ResponsiveAppBar pages={pages} />
+        <Suspense fallback={<Loading />}>
+          <Box>
+            {pages.map((item) => (
+              <Box key={item.name}>{item.component} </Box>
+            ))}
+          </Box>
 
-            <BackToTop />
-          </Suspense>
-<Footer />
+          <BackToTop />
+        </Suspense>
+        <Footer />
       </div>
     </ThemeProvider>
   );

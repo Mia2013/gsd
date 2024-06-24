@@ -2,8 +2,9 @@ import React from "react";
 
 const Home = React.lazy(() => import("../pages/Home"));
 const About = React.lazy(() => import("../pages/About"));
-const Products = React.lazy(() => import("../pages/Products"));
+const Prices = React.lazy(() => import("../pages/Prices"));
 const Contact = React.lazy(() => import("../pages/Contact"));
+const Services = React.lazy(() => import("../pages/Services"));
 
 export const pages = [
   {
@@ -18,9 +19,14 @@ export const pages = [
     component: <About />,
   },
   {
+    name: "Szolgáltatások",
+    to: "services",
+    component: <Services />,
+  },
+  {
     name: "Árak",
-    to: "wines",
-    component: <Products />,
+    to: "prices",
+    component: <Prices />,
   },
   {
     name: "Kapcsolat",
