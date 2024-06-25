@@ -30,11 +30,15 @@ function DrawerAppBar(props) {
           component="img"
           className="logo"
           sx={{
-            width: "50%",
+            width: "10%",
           }}
           src={`${process.env.PUBLIC_URL}/pic/logo.png`}
         ></Typography>
       </Typography>
+        <Typography sx={{    color: "white", fontWeight: "bolder",
+                textTransform: "uppercase",
+                fontFamily: "Italianno, cursive",}}>              GSD MobilGumi
+        </Typography>
       <Divider />
       <List>
         {pages.map((page) => (

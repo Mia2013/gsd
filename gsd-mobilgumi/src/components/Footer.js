@@ -25,12 +25,12 @@ export default function FixedBottomNavigation() {
               <Box borderBottom={1} color="text.secondary">Minta Kft.</Box>
 
               <Box>
-                <Typography variant="body1" sx={{my: 1}} color="text.secondary">
+                <Typography variant="body1" sx={{my: 1}} >
                   Cégjegyzékszám 11-11-11111
                 </Typography>
               </Box>
               <Box>
-                <Typography variant="body1" color="text.secondary">Adószám 22222222-2-22</Typography>
+                <Typography variant="body1" >Adószám 22222222-2-22</Typography>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
@@ -44,7 +44,6 @@ export default function FixedBottomNavigation() {
                   component="a"
                   variant="body1"
                   href="tel:+3630-470-0548"
-                  color="text.secondary"
                 >
                   <LocalPhoneIcon sx={{ mr: 1, pt: 0.8 }} color="text.secondary"/>
                   Telefonszám: +36 30 470 0548
@@ -60,7 +59,6 @@ export default function FixedBottomNavigation() {
                   component="a"
                   variant="body1"
                   href="mailto: gsd150207@gmail.com"
-                  color="text.secondary"
                 >
                   <EmailIcon sx={{ mr: 1, pt: 0.8, }} color="text.secondary"/> E-mail cím:
                   gsd150207@gmail.com
@@ -80,7 +78,6 @@ export default function FixedBottomNavigation() {
                   component="a"
                   variant="body1"
                   href="https://www.facebook.com/profile.php?id=61560684907877&locale=hu_HU"
-                  color="text.secondary"
                 >
                   <FacebookIcon
                     sx={{ mr: 1, 
@@ -101,7 +98,6 @@ export default function FixedBottomNavigation() {
                   component="a"
                   variant="body1"
                   href="https://www.instagram.com/gsd-mobilgumi"
-                color="text.secondary"
                 >
                   <InstagramIcon
                     sx={{ mr: 1, pt: 0.8 }}

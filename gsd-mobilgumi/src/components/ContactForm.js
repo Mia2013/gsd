@@ -152,6 +152,7 @@ export default function ContactForm({ styles }) {
 
                         />
                         <FormControlLabel
+                            fullWidth
                             control={
                                 <Checkbox
                                     name="gdpr"
@@ -161,7 +162,6 @@ export default function ContactForm({ styles }) {
                                         color: errors.gdpr ? "#d32f2f" : "initial",
                                     }}
                                     value={watch("gdpr")}
-fullWidth
                                 />
                             }
                             label={
@@ -193,7 +193,7 @@ fullWidth
                             }
                         />
 
-                        <Button type="submit" variant="contained" sx={{borderRadius: "30px", py: 1, px: 3}} endIcon={<SendIcon />}>
+                        <Button type="submit" variant="contained" sx={{ borderRadius: "30px", py: 1, px: 3 }} endIcon={<SendIcon />}>
                             Küldés
                         </Button>
                     </Box>

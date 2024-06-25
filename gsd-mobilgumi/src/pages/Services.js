@@ -30,9 +30,7 @@ export default function Services() {
                 <Grid item={12} container spacing={4}>
                     {
                         services.map((item) => (
-                            <Grid item xs={4}                                         data-aos="fade-down"
->
-                                <Box sx={{ background: "#111", p: 3, textAlign: "center" }} className="services-box">
+                            <Grid item xs={12}  md={4} data-aos="fade-down" key={item.title}>                                <Box sx={{ background: "#111", p: 3, textAlign: "center" }} className="services-box">
                                     <Box sx={{ textAlign: "center" }}>
                                         <Typography variant="h6"
                                             color="text.secondary" sx={{ my: 3 }}>{item.title}</Typography>

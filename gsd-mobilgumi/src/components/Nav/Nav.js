@@ -8,6 +8,8 @@ import {
   Typography,
 } from "@mui/material";
 import { Link } from "react-scroll";
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+
 import MenuIcon from "@mui/icons-material/Menu";
 import ScrollToColor from "./ScrollToColor";
 
@@ -101,7 +103,29 @@ const ResponsiveAppBar = ({ pages }) => {
 
                 </Link>
               ))}
+              <Button
+                sx={{
+                  mx: "auto",
+                  borderRadius: '30px',
+                  px: 3,
+                  py: 1,
+                  fontWeight: 'bolder',
+                  mx: 2,
+                  "&:hover": {
+                    transform: "scale(1.1)"
+                  }
+                }}
+                variant="contained"
+                size="small"
+                endIcon={<LocalPhoneIcon sx={{
+                  strokeWidth: 4
+                }} />}
+                href="tel:+3630-470-0548"
+              >
+
+                Hívás        </Button>
             </Box>
+
           </Box>
           <DrawerAppBar
             pages={pages}
@@ -144,14 +168,22 @@ const ResponsiveAppBar = ({ pages }) => {
               position: "absolute",
               left: "50%",
               transform: "translateX(-50%)",
+              // flexDirection: "row",
+              //   justifyContent: "flex-start",
+              //   alignItems: "center",
+              gap: 2, textDecoration: "none",
+              color: "white", fontWeight: "bolder",
+              textTransform: "uppercase",
             }}
           >
             <Typography
               component="img"
               className="logo"
-              sx={{ width: "100%" }}
+              sx={{ width: "20%" }}
               src={`${process.env.PUBLIC_URL}/pic/logo.png`}
             ></Typography>
+            GSD MobilGumi
+
           </Typography>
         </Box>
       </AppBar>

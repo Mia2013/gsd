@@ -31,7 +31,8 @@ export default function About() {
               textAlign: "justify",
               textJustify: "inter-word",
               fontFamily: "Exo 2, sans-serif",
-              ml: 5
+              ml: {xs: 0, md:5},
+              mt: {xs: 3, md: 0}
             }}
             data-aos="fade-left"
           >
