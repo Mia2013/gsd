@@ -1,6 +1,5 @@
 :root {
   --color: #a97142;
-  --swiper-theme-color: #a97142 !important;
 }
 
 
@@ -8,8 +7,9 @@
 .MuiFab-root:hover,
 .MuiFab-root:focus,
 .MuiFab-root:active {
-  background-color: #a97142 !important;
-  color: #2a2c2d !important;
+  background-color: #262626 !important;
+  color: #ff4c42 !important;
+  border: 2px solid #ff4c42 !important;
 }
 
 @media only screen and (max-width: 899px) {
@@ -30,3 +30,4 @@
 
 
 }
+

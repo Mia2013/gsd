@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Typography, Button, Box } from "@mui/material";
 import { Link } from "react-scroll";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 export default function Home() {
   const images = [
@@ -21,17 +21,17 @@ export default function Home() {
         height: "104vh",
       }}
       id="back-to-top-anchor">
-      <Grid item xs={12} 
-      sx={{
-        display: "flex",
-        alignItems: "flex-end",
-        justifyContent: "flex-end",
-        flexDirection: "row"
-      }}
-      data-aos="fade-up"
+      <Grid item xs={12}
+        sx={{
+          display: "flex",
+          alignItems: "flex-end",
+          justifyContent: "flex-end",
+          flexDirection: "row"
+        }}
+        data-aos="fade-up"
 
       >
-        <Box sx={{width: "1400px"}}></Box>
+        <Box sx={{ width: "1400px" }}></Box>
         <Button
           sx={{
             my: 8,
@@ -39,27 +39,20 @@ export default function Home() {
             borderRadius: '30px',
             px: 7,
             py: 2,
-            fontWeight: 'bolder'
+            fontWeight: 'bolder',
+            "&:hover": {
+              transform: "scale(1.3)"
+            }
           }}
           variant="contained"
-          endIcon={<ArrowForwardIcon sx={{
+          size="large"
+          endIcon={<LocalPhoneIcon sx={{
             strokeWidth: 4
           }} />}
-
+href="tel:+3630-470-0548"
         >
-          <Link
-            // onClick={handleDrawerToggle}
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
 
-          >
-            Ajánlat kérése
-          </Link>
-        </Button>
+          Hívás        </Button>
       </Grid>
     </Grid >
   );

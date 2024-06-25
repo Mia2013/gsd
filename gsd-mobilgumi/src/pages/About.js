@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <Container maxWidth="lg" id="about" >
-      <Grid container sx={{ my: { xs: 3, md: 8 }, mx: "auto" }} >
+      <Grid container sx={{ py: 5, mx: "auto" }} >
         <Grid item xs={12} sx={{ textAlign: "center" }}>
           <PageTitle title="Rólunk"></PageTitle>
         </Grid>

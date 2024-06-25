@@ -14,7 +14,7 @@ export default function FixedBottomNavigation() {
       <Box
         px={{ xs: 3, sm: 5 }}
         py={{ xs: 5, sm: 5 }}
-        bgcolor="#262626"
+        bgcolor="#111"
 
         color="white"
         sx={{borderTop: "solid 2px #111"}}
@@ -22,19 +22,19 @@ export default function FixedBottomNavigation() {
         <Container maxWidth="lg">
           <Grid container spacing={3}>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Minta Kft.</Box>
+              <Box borderBottom={1} color="text.secondary">Minta Kft.</Box>
 
               <Box>
-                <Typography variant="body1" sx={{my: 1}}>
+                <Typography variant="body1" sx={{my: 1}} color="text.secondary">
                   Cégjegyzékszám 11-11-11111
                 </Typography>
               </Box>
               <Box>
-                <Typography variant="body1">Adószám 22222222-2-22</Typography>
+                <Typography variant="body1" color="text.secondary">Adószám 22222222-2-22</Typography>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Elérhetőség</Box>
+              <Box borderBottom={1} color="text.secondary">Elérhetőség</Box>
               <Box>
                 <Typography
                   color="inherit"
@@ -43,10 +43,11 @@ export default function FixedBottomNavigation() {
                   }}
                   component="a"
                   variant="body1"
-                  href="tel:+3620-111-1111"
+                  href="tel:+3630-470-0548"
+                  color="text.secondary"
                 >
-                  <LocalPhoneIcon sx={{ mr: 1, pt: 0.8, color: "white" }} />
-                  Telefonszám: +36 20 111 1111
+                  <LocalPhoneIcon sx={{ mr: 1, pt: 0.8 }} color="text.secondary"/>
+                  Telefonszám: +36 30 470 0548
                 </Typography>
               </Box>
               <Box>
@@ -58,15 +59,17 @@ export default function FixedBottomNavigation() {
                   }}
                   component="a"
                   variant="body1"
-                  href="mailto: minta@gsd.hu"
+                  href="mailto: gsd150207@gmail.com"
+                  color="text.secondary"
                 >
-                  <EmailIcon sx={{ mr: 1, pt: 0.8, color: "white" }} /> E-mail cím:
-                  minta@gsd.hu
+                  <EmailIcon sx={{ mr: 1, pt: 0.8, }} color="text.secondary"/> E-mail cím:
+                  gsd150207@gmail.com
+
                 </Typography>
               </Box>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <Box borderBottom={1}>Közösségi média</Box>
+              <Box borderBottom={1} color="text.secondary">Közösségi média</Box>
               <Box>
                 <Typography
                   color="inherit"
@@ -76,12 +79,13 @@ export default function FixedBottomNavigation() {
                   target="_blank"
                   component="a"
                   variant="body1"
-                  href="https://www.facebook.com/gsd-mobilgumi"
+                  href="https://www.facebook.com/profile.php?id=61560684907877&locale=hu_HU"
+                  color="text.secondary"
                 >
                   <FacebookIcon
                     sx={{ mr: 1, 
                       pt: 0.8, 
-                      color: 'white' }}
+                     }}
                   />
                   Facebook
                 </Typography>
@@ -97,9 +101,10 @@ export default function FixedBottomNavigation() {
                   component="a"
                   variant="body1"
                   href="https://www.instagram.com/gsd-mobilgumi"
+                color="text.secondary"
                 >
                   <InstagramIcon
-                    sx={{ mr: 1, pt: 0.8, color: 'white' }}
+                    sx={{ mr: 1, pt: 0.8 }}
                   />
                   Instagram
                 </Typography>
@@ -108,14 +113,14 @@ export default function FixedBottomNavigation() {
           </Grid>
         </Container>
       </Box>
-
+{/* 
       <Box
         bgcolor="#111"
 
           sx={{ py: 2 }}
         textAlign="center"
-      >
-        <Container maxWidth="lg">
+      > */}
+        {/* <Container maxWidth="lg">
           <Box textAlign="center">
             <Typography
               color="white"
@@ -129,8 +134,8 @@ export default function FixedBottomNavigation() {
               Adatvédelmi tájékoztató
             </Typography>{" "}
           </Box>
-        </Container>
-      </Box>
+        </Container> */}
+      {/* </Box> */}
     </footer>
   );
 }

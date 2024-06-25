@@ -8,7 +8,7 @@ export default function PageTitle({ title, id, color="text.primary" }) {
         display: "flex",
         alignItems: "center",
         flexDirection: "column",
-        my: { xs: 5, md: 12 },
+        my: 8,
       }}
     >
       <Typography
