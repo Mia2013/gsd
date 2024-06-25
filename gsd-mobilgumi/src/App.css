@@ -22,7 +22,7 @@
 
 
 .active {
-  border: 1px solid #ff3131;
+  border-bottom: 1px solid #ff3131;
 }
 
 .services-box:hover{

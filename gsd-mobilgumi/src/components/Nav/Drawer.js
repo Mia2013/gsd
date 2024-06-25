@@ -35,10 +35,11 @@ function DrawerAppBar(props) {
           src={`${process.env.PUBLIC_URL}/pic/logo.png`}
         ></Typography>
       </Typography>
-        <Typography sx={{    color: "white", fontWeight: "bolder",
-                textTransform: "uppercase",
-                fontFamily: "Italianno, cursive",}}>              GSD MobilGumi
-        </Typography>
+      <Typography sx={{
+        color: "white", fontWeight: "bolder",
+        textTransform: "uppercase",
+      }}>              GSD MobilGumi
+      </Typography>
       <Divider />
       <List>
         {pages.map((page) => (
@@ -49,6 +50,7 @@ function DrawerAppBar(props) {
                   my: 2,
                   mx: "auto",
                   display: "block",
+                  fontWeight: "bolder"
                 }}
               >
                 <Link

@@ -1,11 +1,9 @@
 import React from "react";
-import { Grid,  Button, Box } from "@mui/material";
+import { Grid,  Button,  } from "@mui/material";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 export default function Home() {
-  const images = [
-    { src: `${process.env.PUBLIC_URL}/pic/home.jpg`, position: "center" },
-  ]
+
   return (
     <Grid
       container
@@ -30,14 +28,13 @@ export default function Home() {
         data-aos="fade-up"
 
       >
-        <Box sx={{ width: "1400px" }}></Box>
         <Button
           sx={{
             my: 8,
-            mx: "auto",
             borderRadius: '30px',
             px: 7,
             py: 2,
+            mr: {xs: 3, md: 8},
             fontWeight: 'bolder',
             "&:hover": {
               transform: "scale(1.3)"

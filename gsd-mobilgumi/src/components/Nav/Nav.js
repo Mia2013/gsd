@@ -105,7 +105,6 @@ const ResponsiveAppBar = ({ pages }) => {
               ))}
               <Button
                 sx={{
-                  mx: "auto",
                   borderRadius: '30px',
                   px: 3,
                   py: 1,
@@ -157,7 +156,8 @@ const ResponsiveAppBar = ({ pages }) => {
               transform: "translateY(-50%)",
             }}
           >
-            <MenuIcon />
+            <MenuIcon sx={{ color: "white" }}
+            />
           </IconButton>
           <Typography
             className="logo"
